@@ -2,9 +2,9 @@
   from {opacity: 1;}
   to {opacity: 0;}   
 }
-@keyframes rotate {
+@keyframes spin {
   from {rotate: 0deg;}
-  to {rotate: 3600;}
+  to {rotate: 360deg;}
 }
 
 body {
@@ -15,7 +15,18 @@ body {
   display: none;
 }
 
-.base {position: relative;}
+.base {
+  position: relative;
+  
+  width: 100%;
+  aspect-ratio: 1920/2687;
+  background-image: url(mid_1080p/base.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center 15%;
+  overflow: hidden;  
+  translate: 0 -7%;
+}
 .base-image {
   width: 100%;
 }
@@ -29,15 +40,45 @@ body {
 }
 #s008-001 {  
   left: 49.8%; top: 24.54%; width: 46%;
+  animation: spin 420s linear infinite;
 }
 
-#s002 {    
-  right: 14%;
-  top: 23.8%;
-  width: 26%;
+#s002 {      
+  left: 86.24%;  top: 23.3%;  width: 26.6%;
+  animation: spin 120s linear infinite reverse;
 }
 #s004 {    
-  left: 14%;
-  top: 23.8%;
-  width: 26%;
+  left: 13.8%;  top: 23.8%;  width: 26%;
+  animation: spin 120s linear infinite reverse;
+}
+
+#s005-000 {    
+  left: 26.2%;  top: 40%;  width: 15%;
+}
+#s005-001 {    
+  left: 26.2%;  top: 40.03%;  width: 25.5%;
+  animation: spin 240s linear infinite;
+}
+
+#s006-000 {    
+  left: 73.9%;  top: 39.8%;  width: 18.9%;
+}
+#s006-001 {      
+  left: 73.9%;  top: 39.8%;  width: 25.5%;
+  animation: spin 240s linear infinite reverse;
+}
+
+#s007-000 {  
+  left: 50%;  top: 48.8%;  width: 22.3%;
+}
+#s007-001 {  
+  left: 50%;  top: 48.8%;  width: 28%;
+  animation: spin 420s linear infinite reverse;
+}
+
+#borderleft {
+  left: 0; top: 0; width: 27%;;
+}
+#borderright {  
+  right: -7.5%;  top: 51.2%;  width: 14%;
 }
