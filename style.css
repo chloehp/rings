@@ -2,7 +2,42 @@
   from {opacity: 1;}
   to {opacity: 0;}   
 }
+@keyframes rotate {
+  from {rotate: 0deg;}
+  to {rotate: 3600;}
+}
+
+body {
+  margin: 0;
+}
 
 .display-none {
   display: none;
+}
+
+.base {position: relative;}
+.base-image {
+  width: 100%;
+}
+.sub-image {
+  position: absolute;
+  translate: -50% -50%;
+}
+
+#s008-000 {  
+  left: 49.8%; top: 24.54%; width: 32%;
+}
+#s008-001 {  
+  left: 49.8%; top: 24.54%; width: 46%;
+}
+
+#s002 {    
+  right: 14%;
+  top: 23.8%;
+  width: 26%;
+}
+#s004 {    
+  left: 14%;
+  top: 23.8%;
+  width: 26%;
 }
