@@ -1,0 +1,29 @@
+@keyframes fade-out {
+    from {opacity: 1;}
+    to {opacity: 0;}   
+}
+@keyframes spin {
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+
+@font-face {
+    font-family: 'GrandifloraOne';
+    src: url(assets/GrandifloraOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'YesevaOne';
+    src: url(assets/YesevaOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Gloucester';
+    src: url(assets/Gloucester.TTF);
+}
+@font-face {
+    font-family: 'French-Script';
+    src: url(assets/French-Script.TTF);
+}
+@font-face {
+    font-family: 'Engravers';
+    src: url(assets/Engravers.TTF);
+}
