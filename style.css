@@ -24,8 +24,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center 15%;
-  overflow: hidden;  
-  translate: 0 -7%;
+  overflow: hidden; 
 }
 .base-image {
   width: 100%;
@@ -44,7 +43,7 @@ body {
 }
 
 #s002 {      
-  left: 86.24%;  top: 23.3%;  width: 26.6%;
+  left: 86.24%;  top: 23.42%;  width: 26.3%;
   animation: spin 120s linear infinite reverse;
 }
 #s004 {    
@@ -57,7 +56,7 @@ body {
 }
 #s005-001 {    
   left: 26.2%;  top: 40.03%;  width: 25.5%;
-  animation: spin 240s linear infinite;
+  transition: rotate 90ms;
 }
 
 #s006-000 {    
@@ -65,7 +64,7 @@ body {
 }
 #s006-001 {      
   left: 73.9%;  top: 39.8%;  width: 25.5%;
-  animation: spin 240s linear infinite reverse;
+  transition: rotate 90ms;
 }
 
 #s007-000 {  
@@ -73,7 +72,7 @@ body {
 }
 #s007-001 {  
   left: 50%;  top: 48.8%;  width: 28%;
-  animation: spin 420s linear infinite reverse;
+  animation: spin 60s linear infinite reverse;
 }
 
 #borderleft {

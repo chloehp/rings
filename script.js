@@ -1,13 +1,9 @@
-console.log("abc");
+window.scroll(0, 300);
 
-//console.log("navigator.userAgent:");
-//console.log(navigator.userAgent);
-//console.log("navigator.appVersion:");
-//console.log(navigator.appVersion);
-//console.log("navigator.platform:");
-//console.log(navigator.platform);
-//console.log("navigator.language:");
-//console.log(navigator.language);
-
-console.log(history)
-  
+function scrollUpdate() {
+    const scrolled = document.documentElement.scrollTop / 30;
+    const rightring = document.getElementById("s006-001");
+    const leftring = document.getElementById("s005-001");
+    rightring.style.rotate = scrolled + "deg";
+    leftring.style.rotate = "-" + scrolled + "deg";
+}
