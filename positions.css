@@ -49,6 +49,59 @@
     #s007-000 {width: 78.7%;}
     #s007-001 {animation: spin 120s linear infinite reverse;}
     #s007 {left: 50%;  top: 900px;  width: 99%;}
+
+    #bottom {
+        position: absolute;
+        left: -1%; bottom: 0;
+        width: 102%;
+    }
+    #filigree1-l {    
+        left: 12%; top: 490px;
+        width: 15%;
+        rotate: -84deg;
+    }
+    #filigree1-r {    
+        left: 88%; top: 490px;
+        width: 15%;
+        rotate: -96deg;
+        transform: scaleY(-1);
+    }
+    #filigree2 {    
+        left: 49.3%; top: 542px;
+        width: 15%;
+        rotate: -87deg;
+    }
+    #filigree1-2-l {    
+        left: 9%; top: 765px;
+        width: 12%;
+        rotate: -105deg;
+        transform: scaleX(-1);
+    }
+    #filigree1-2-r {        
+        left: 91%; top: 765px;
+        width: 12%;
+        rotate: -75deg;
+        scale: -1;
+    }
+    #filigree2-2 {    
+        left: 50%; top: 696px;
+        width: 9%;
+        rotate: 90deg;
+    }
+    #filigree3-l {        
+        left: 12%; top: 1038px;
+        width: 21%;
+        rotate: -106deg;
+        transform: scaleY(-1);
+    }
+    #filigree3-r {    
+        left: 88%; top: 1038px;
+        width: 21%;
+        rotate: -75deg;
+    }
+
+    #borderleft, #borderright 
+    {display: none;}
 }
 
 /* DESKTOP */
@@ -96,4 +149,22 @@
     #s007-000 {width: 78.7%;}
     #s007-001 {animation: spin 120s linear infinite reverse;}
     #s007 {left: 50%;  top: 48.8%;  width: 28%;}
+    
+    #borderleft {
+        display: block;
+        position: absolute;
+        left: 0; top: 0;
+        width: 13.52%;
+        z-index: 9;
+    }
+    #borderright {  
+        display: block;
+        position: absolute;
+        right: 0;  top: 0; 
+        width: 13.52%;
+        z-index: 9;
+    }    
+    
+    #bottom, #filigree1-l, #filigree1-r, #filigree2, #filigree1-2-l, #filigree1-2-r, #filigree2-2, #filigree3-l, #filigree3-r
+    {display: none;}
 }

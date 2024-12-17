@@ -1,4 +1,4 @@
-window.scroll(0, 120);
+//window.scroll(0, 120);
 setInterval(scrollUpdate, 120);
 
 function scrollUpdate() {

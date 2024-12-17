@@ -9,7 +9,7 @@ body {
 .base {
   position: relative;  
   width: 100%;
-  min-height: 1500px;
+  min-height: 1230px;
   background-color: #efe3cd;
   overflow: hidden; 
   @media (min-width: 1080px) {
@@ -83,23 +83,14 @@ body {
   border-radius: 100%;
 }
 
-#borderleft {
-  display: none;
-  @media (min-width: 1080px) {
-    display: block;
-    position: absolute;
-    left: 0; top: 0;
-    width: 13.52%;
-    z-index: 9;
-  }
+/*
+#mob-bg {
+  display: block;
+  position: absolute;
+  left: 0;  top: 180px; 
+  width: 100%; height: 100%;
+  background-color: #404642;
+  z-index: 0;
+  @media (min-width: 1080px) {display: none;}
 }
-#borderright {  
-  display: none;
-  @media (min-width: 1080px) {
-    display: block;
-    position: absolute;
-    right: 0;  top: 0; 
-    width: 13.52%;
-    z-index: 9;
-  }
-}
+  */
