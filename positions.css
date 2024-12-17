@@ -1,5 +1,5 @@
 /* MOBILE */
-@media (max-width: 1079px) {
+@media (max-width: 719px) {
     #toptext-left {
         display: none;
         left: 13.5%;
@@ -22,10 +22,12 @@
     }
 
     #s008-000 {  
-        left: 49.8%; top: 294px; width: 84%;
+        left: 49.8%; top: 23.9%; width: 84%;
+        z-index: 30;
     }
     #s008-001 {  
-        left: 49.8%; top: 294px; width: 120%;
+        left: 49.8%; top: 23.9%; width: 120%;
+        z-index: 30;
         animation: spin 240s linear infinite;
     }
 
@@ -33,22 +35,24 @@
         left: 100%;  top: 0;  width: 72%;
         animation: spin 120s linear infinite reverse;
         z-index: 18;
+        @media (max-width: 300px) {display: none;}
     }
     #s004 {    
-        left: 0;  top: -3px;  width: 72%;
+        left: 0;  top: -0.244%;  width: 72%;
         animation: spin 120s linear infinite reverse;
         z-index: 18;
+        @media (max-width: 300px) {display: none;}
     }
 
     #s005-000 {width: 62%;}
-    #s005 {left: 18%;  top: 630px;  width: 64%;}
+    #s005 {left: 18%;  top: 51.22%;  width: 64%;}
 
     #s006-000 {width: 75.3%;}
-    #s006 {left: 82%;  top: 630px;  width: 64%;}
+    #s006 {left: 82%;  top: 51.22%;  width: 64%;}
 
     #s007-000 {width: 78.7%;}
     #s007-001 {animation: spin 120s linear infinite reverse;}
-    #s007 {left: 50%;  top: 900px;  width: 99%;}
+    #s007 {left: 50%;  top: 73.17%;  width: 99%;}
 
     #bottom {
         position: absolute;
@@ -56,46 +60,46 @@
         width: 102%;
     }
     #filigree1-l {    
-        left: 12%; top: 490px;
+        left: 12%; top: 39.84%;
         width: 15%;
         rotate: -84deg;
     }
     #filigree1-r {    
-        left: 88%; top: 490px;
+        left: 88%; top: 39.84%;
         width: 15%;
         rotate: -96deg;
         transform: scaleY(-1);
     }
     #filigree2 {    
-        left: 49.3%; top: 542px;
+        left: 49.3%; top: 44.06%;
         width: 15%;
         rotate: -87deg;
     }
     #filigree1-2-l {    
-        left: 9%; top: 765px;
+        left: 9%; top: 62.2%;
         width: 12%;
         rotate: -105deg;
         transform: scaleX(-1);
     }
     #filigree1-2-r {        
-        left: 91%; top: 765px;
+        left: 91%; top: 62.2%;
         width: 12%;
         rotate: -75deg;
         scale: -1;
     }
     #filigree2-2 {    
-        left: 50%; top: 696px;
+        left: 50%; top: 56.59%;
         width: 9%;
         rotate: 90deg;
     }
     #filigree3-l {        
-        left: 12%; top: 1038px;
+        left: 12%; top: 84.39%;
         width: 21%;
         rotate: -106deg;
         transform: scaleY(-1);
     }
     #filigree3-r {    
-        left: 88%; top: 1038px;
+        left: 88%; top: 84.39%;
         width: 21%;
         rotate: -75deg;
     }
@@ -105,11 +109,12 @@
 }
 
 /* DESKTOP */
-@media (min-width: 600px) {
+@media (min-width: 720px) {
     #toptext-left {
         left: 13.5%;
         font-size: 30px;
         background-color: #efe3cd;
+        @media (max-width: 1080px) {font-size: 15px;}
     }
     #toptext-centre {
         left: 50%;
@@ -121,14 +126,17 @@
         right: 13.5%;
         font-size: 30px;
         background-color: #f6e7d5;
+        @media (max-width: 1080px) {font-size: 15px;}
     }
     
     #s008-000 {  
-        left: 49.8%; top: 24.54%; width: 32%;
+        left: 49.8%; top: 24.6%; width: 32%;
+        z-index: 30;
     }
     #s008-001 {  
-        left: 49.8%; top: 24.54%; width: 46%;
+        left: 49.8%; top: 24.6%; width: 46%;
         animation: spin 240s linear infinite;
+        z-index: 30;
     }
     
     #s002 {      
