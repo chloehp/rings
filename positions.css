@@ -1,0 +1,99 @@
+/* MOBILE */
+@media (max-width: 1079px) {
+    #toptext-left {
+        display: none;
+        left: 13.5%;
+        font-size: 30px;
+        background-color: #efe3cd;
+    }
+    #toptext-centre {
+        left: 50%; top: 0;
+        translate: -50%;
+        width: 150px;
+        font-size: 24px;
+        bottom: auto;
+        background-color: #f0e3d2;
+    }
+    #toptext-right {
+        display: none;
+        right: 13.5%;
+        font-size: 30px;
+        background-color: #f6e7d5;
+    }
+
+    #s008-000 {  
+        left: 49.8%; top: 294px; width: 84%;
+    }
+    #s008-001 {  
+        left: 49.8%; top: 294px; width: 120%;
+        animation: spin 240s linear infinite;
+    }
+
+    #s002 {      
+        left: 100%;  top: 0;  width: 72%;
+        animation: spin 120s linear infinite reverse;
+        z-index: 18;
+    }
+    #s004 {    
+        left: 0;  top: -3px;  width: 72%;
+        animation: spin 120s linear infinite reverse;
+        z-index: 18;
+    }
+
+    #s005-000 {width: 62%;}
+    #s005 {left: 18%;  top: 630px;  width: 64%;}
+
+    #s006-000 {width: 75.3%;}
+    #s006 {left: 82%;  top: 630px;  width: 64%;}
+
+    #s007-000 {width: 78.7%;}
+    #s007-001 {animation: spin 120s linear infinite reverse;}
+    #s007 {left: 50%;  top: 900px;  width: 99%;}
+}
+
+/* DESKTOP */
+@media (min-width: 1080px) {
+    #toptext-left {
+        left: 13.5%;
+        font-size: 30px;
+        background-color: #efe3cd;
+    }
+    #toptext-centre {
+        left: 50%;
+        font-size: 45px;
+        translate: -50%;
+        background-color: #f0e3d2;
+    }
+    #toptext-right {
+        right: 13.5%;
+        font-size: 30px;
+        background-color: #f6e7d5;
+    }
+    
+    #s008-000 {  
+        left: 49.8%; top: 24.54%; width: 32%;
+    }
+    #s008-001 {  
+        left: 49.8%; top: 24.54%; width: 46%;
+        animation: spin 240s linear infinite;
+    }
+    
+    #s002 {      
+        left: 86.24%;  top: 23.42%;  width: 26.3%;
+        animation: spin 120s linear infinite reverse;
+    }
+    #s004 {    
+        left: 13.8%;  top: 23.8%;  width: 26%;
+        animation: spin 120s linear infinite reverse;
+    }
+    
+    #s005-000 {width: 62%;}
+    #s005 {left: 26.2%;  top: 40.03%;  width: 25.5%;}
+    
+    #s006-000 {width: 75.3%;}
+    #s006 {left: 73.9%;  top: 39.8%;  width: 25.5%;}
+    
+    #s007-000 {width: 78.7%;}
+    #s007-001 {animation: spin 120s linear infinite reverse;}
+    #s007 {left: 50%;  top: 48.8%;  width: 28%;}
+}

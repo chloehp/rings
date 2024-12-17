@@ -9,12 +9,16 @@ body {
 .base {
   position: relative;  
   width: 100%;
-  aspect-ratio: 1920/2687;
-  background-image: url(mid_1080p/base.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: center 15%;
+  min-height: 1500px;
+  background-color: #efe3cd;
   overflow: hidden; 
+  @media (min-width: 1080px) {
+    aspect-ratio: 1920/2687;
+    background-image: url(mid_1080p/base.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center 15%;
+  }
 }
 .top-text {
   position: absolute;
@@ -23,7 +27,44 @@ body {
   font-family: 'GrandifloraOne';
   color: #3d3223;
   text-transform: uppercase;
+  text-align: center;
   z-index: 12;
+}
+
+.ringc {
+  position: absolute;
+  translate: -50% -50%;
+  overflow: hidden; 
+}
+.ringc--ring {
+  position: relative;
+  width: 100%;
+  z-index: 6;
+  transition: rotate 420ms;
+}
+.ringc--circle {
+  position: absolute;
+  top: 50%; left: 50%;
+  translate: -50% -50%;
+  z-index: 6;
+}
+.ringc--heading {
+  position: absolute;
+  top: 50%; left: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  z-index: 5;
+  margin: 0;
+  font-family: 'YesevaOne';  
+  font-size: 39px;
+  color: #b35a41;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: #b35a41 3px solid;
+  border-bottom: #b35a41 3px solid;
+  @media (min-width: 1080px) {
+    font-size: 90px;
+  }
 }
 .sub-image {
   position: absolute;
@@ -36,73 +77,29 @@ body {
   pointer-events: auto;
 }
 .fadey:hover {opacity: 0.15;}
-.fadey:focus {opacity: 0.15;}
-
-#toptext-left {
-  left: 13.5%;
-  font-size: 30px;
-  background-color: #efe3cd;
-}
-#toptext-centre {
-  left: 50%;
-  font-size: 45px;
-  translate: -50%;
-  background-color: #f0e3d2;
-}
-#toptext-right {
-  right: 13.5%;
-  font-size: 30px;
-  background-color: #f6e7d5;
-}
-
-#s008-000 {  
-  left: 49.8%; top: 24.54%; width: 32%;
-}
-#s008-001 {  
-  left: 49.8%; top: 24.54%; width: 46%;
-  animation: spin 240s linear infinite;
-}
-
-#s002 {      
-  left: 86.24%;  top: 23.42%;  width: 26.3%;
-  animation: spin 120s linear infinite reverse;
-}
-#s004 {    
-  left: 13.8%;  top: 23.8%;  width: 26%;
-  animation: spin 120s linear infinite reverse;
-}
-
-#s005-000 {    
-  left: 26.2%;  top: 40%;  width: 15%;
-}
-#s005-001 {    
-  left: 26.2%;  top: 40.03%;  width: 25.5%;
-  transition: rotate 420ms;
-}
-
-#s006-000 {    
-  left: 73.9%;  top: 39.8%;  width: 18.9%;
-}
-#s006-001 {      
-  left: 73.9%;  top: 39.8%;  width: 25.5%;
-  transition: rotate 420ms;
-}
-
-#s007-000 {  
-  left: 50%;  top: 48.8%;  width: 22.3%;
-}
-#s007-001 {  
-  left: 50%;  top: 48.8%;  width: 28%;
-  animation: spin 120s linear infinite reverse;
+.fadey:focus {
+  opacity: 0.15;
+  border: #385c70 3px solid;
+  border-radius: 100%;
 }
 
 #borderleft {
-  position: absolute;
-  left: 0; top: 0;   width: 13.52%;
-  z-index: 9;
+  display: none;
+  @media (min-width: 1080px) {
+    display: block;
+    position: absolute;
+    left: 0; top: 0;
+    width: 13.52%;
+    z-index: 9;
+  }
 }
 #borderright {  
-  position: absolute;
-  right: 0;  top: 0;    width: 13.52%;
-  z-index: 9;
+  display: none;
+  @media (min-width: 1080px) {
+    display: block;
+    position: absolute;
+    right: 0;  top: 0; 
+    width: 13.52%;
+    z-index: 9;
+  }
 }
