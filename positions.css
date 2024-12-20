@@ -21,13 +21,9 @@
         background-color: #f6e7d5;
     }
 
-    #s008-000 {  
-        left: 49.8%; top: 23.9%; width: 84%;
-        z-index: 30;
-    }
     #s008-001 {  
         left: 49.8%; top: 23.9%; width: 120%;
-        z-index: 30;
+        z-index: 24;
         animation: spin 240s linear infinite;
     }
 
@@ -129,14 +125,10 @@
         @media (max-width: 1080px) {font-size: 15px;}
     }
     
-    #s008-000 {  
-        left: 49.8%; top: 24.6%; width: 32%;
-        z-index: 30;
-    }
     #s008-001 {  
         left: 49.8%; top: 24.6%; width: 46%;
         animation: spin 240s linear infinite;
-        z-index: 30;
+        z-index: 24;
     }
     
     #s002 {      

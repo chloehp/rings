@@ -4,17 +4,18 @@ body {
 
 #loady {
   position: absolute;
-  min-width: 180vw;
-  min-height: 180vh;
   aspect-ratio: 1/1;
   border-radius: 100%;
   background-color: #35524c;
+  scale: 6;
   transition: scale 1500ms 300ms;
   z-index: 27;
   translate: -50% -50%;
   left: 49.8%; top: 23.9%;
+  width: 81%;
   @media (min-width: 720px) {
     left: 49.8%; top: 24.6%;
+    width: 30%
   }
 }
 
@@ -47,11 +48,12 @@ body {
 .ringc {
   position: absolute;
   translate: -50% -50%;
+  aspect-ratio: 1/1;
   overflow: hidden; 
   z-index: 5;
 }
 .ringc--ring {
-  position: relative;
+  position: absolute;
   width: 100%;
   z-index: 6;
   transition: rotate 420ms;
@@ -80,6 +82,7 @@ body {
     font-size: 4.8vw;
   }
 }
+.ringc--text {}
 .sub-image {
   position: absolute;
   translate: -50% -50%;
@@ -95,4 +98,16 @@ body {
   opacity: 0.15;
   border: #385c70 3px solid;
   border-radius: 100%;
+}
+
+.centre-image {  
+  left: 49.8%; top: 23.9%; width: 84%;
+  z-index: 30;
+  animation: fade-in 300ms;
+  
+  @media (min-width: 720px) {
+    left: 49.8%; top: 24.6%; width: 32%;
+    z-index: 30;
+    animation: fade-in 300ms;
+  }
 }
