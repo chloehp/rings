@@ -3,6 +3,7 @@ document.onreadystatechange = function () {
     if (document.readyState === "complete") {
         const loady = document.getElementById("loady");
         loady.style.scale = 1;
+        document.body.style.backgroundColor = "#f1dbbf";
         setInterval(scrollUpdate, 120);
         setTimeout(function(){
             document.getElementById("s008-000-l").remove();
