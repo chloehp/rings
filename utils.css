@@ -15,15 +15,3 @@
     font-family: 'YesevaOne';
     src: url(assets/YesevaOne-Regular.ttf);
 }
-@font-face {
-    font-family: 'Gloucester';
-    src: url(assets/Gloucester.TTF);
-}
-@font-face {
-    font-family: 'French-Script';
-    src: url(assets/French-Script.TTF);
-}
-@font-face {
-    font-family: 'Engravers';
-    src: url(assets/Engravers.TTF);
-}
