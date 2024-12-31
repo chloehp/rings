@@ -13,10 +13,10 @@
     @media (min-width: 1920px) { font-size: 105px;}
   }
 }
-#s006-000 {transition: opacity 900ms;}
-.ringc:hover #s006-000 {opacity: 0.9 !important;}
-#s006-001 {transition: rotate 2100ms;}
-#s006-h {visibility: hidden;}
+#s005-000 {transition: opacity 900ms;}
+.ringc:hover #s005-000 {opacity: 0.9 !important;}
+#s005-001 {transition: rotate 2100ms;}
+#s005-h {visibility: hidden;}
 
 #bottom {
     display: block;
