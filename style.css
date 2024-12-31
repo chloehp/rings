@@ -91,7 +91,7 @@ a:hover {text-decoration: underline;}
   position: absolute;
   left: 0; top: 7.75%; 
   width: 100%; height: 92.25%;
-  border: #24292c 1.5px solid;
+  border: #3d3223 1.5px dotted;
   z-index: 12;
   @media (min-width: 720px) {
     left: 13.52%; top: 7.75%; 

@@ -1,3 +1,4 @@
+.top-text {background: none !important;}
 .ringc {    
     left: 49.8%; top: 21%; width: 84%;
     z-index: 15;
@@ -12,6 +13,10 @@
     font-size: 6vw;
   }
 }
+#s006-000 {transition: opacity 900ms;}
+.ringc:hover #s006-000 {opacity: 0.9 !important;}
+#s006-001 {transition: rotate 2400ms;}
+#s006-h {visibility: hidden;}
 
 #bottom {
     display: block;
@@ -32,7 +37,7 @@
         background-position: top center;
         height: 100%;
         top: 7.75%;
-        border: none;
+        opacity: 0.72;
     }
     #borderleft {
         scale: -1;
