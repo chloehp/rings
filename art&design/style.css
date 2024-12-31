@@ -1,0 +1,41 @@
+.ringc {    
+    left: 49.8%; top: 21%; width: 84%;
+    z-index: 15;
+    @media (min-width: 720px) {        
+        left: 49.8%; top: 21%; width: 33%;;
+    }
+}
+.ringc--heading {
+    
+  font-size: 54px;
+  @media (min-width: 720px) {
+    font-size: 6vw;
+  }
+}
+
+#bottom {
+    display: block;
+    position: absolute;
+    left: -1%; bottom: 0;
+    width: 102%;
+    @media (min-width: 720px) {   
+        left: 13.48%; bottom: 3%;
+        width: 73.2%;
+    }
+}
+
+@media (min-width: 1260px) {
+    #borderleft, #borderright {
+        background-image: url(../assets/mid_1080p/filigree2.png);
+        background-size: 9vw;
+        background-repeat: space;
+        background-position: top center;
+        height: 100%;
+        top: 7.75%;
+        border: none;
+    }
+    #borderleft {
+        scale: -1;
+        background-position: bottom center;
+    }
+}
