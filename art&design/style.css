@@ -3,14 +3,13 @@
     left: 49.8%; top: 21%; width: 84%;
     z-index: 15;
     @media (min-width: 720px) {        
-        left: 49.8%; top: 21%; width: 33%;;
+        left: 49.8%; top: 19%; width: 30%;;
     }
 }
-.ringc--heading {
-    
+.ringc--heading {    
   font-size: 54px;
   @media (min-width: 720px) {
-    font-size: 6vw;
+    font-size: 5.7vw;
   }
 }
 #s006-000 {transition: opacity 900ms;}
