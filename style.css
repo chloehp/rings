@@ -126,7 +126,7 @@ a:hover {text-decoration: underline;}
   position: absolute;
   top: 50%; left: 50%;
   translate: -50% -50%;
-  transition: opacity 450ms;
+  transition: opacity 600ms;
   pointer-events: auto;
   z-index: 6;
 }
@@ -167,9 +167,9 @@ a:hover {text-decoration: underline;}
   }
 }
 .ringc--link img {width: 100%;}
-.ringc:hover .ringc--circle {opacity: 0.15;}
+.ringc:hover .ringc--circle {opacity: 0.09 !important;}
 .ringc:focus .ringc--circle {
-  opacity: 0.15;
+  opacity: 0.09 !important;
   border: #385c70 3px solid;
   border-radius: 100%;
 }
