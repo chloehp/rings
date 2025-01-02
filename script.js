@@ -8,6 +8,7 @@ document.onreadystatechange = function () {
         const loady = document.getElementById("loady");
         const loadyText = document.getElementById("loady-text");
         circle = document.querySelectorAll(".ringc--circle");
+        document.getElementById("toptext-centre").scrollIntoView(true);     
 
         rightring = document.getElementById("s006-001");
         leftring = document.getElementById("s005-001");
@@ -15,7 +16,7 @@ document.onreadystatechange = function () {
         loady.style.scale = 1;
         loadyText.style.color = "#6cac8500";
         document.body.style.backgroundColor = "#f1dbbf";
-        document.getElementById("s008-000").scrollIntoView(false);
+        document.getElementById("toptext-centre").scrollIntoView(true);     
         setInterval(scrollUpdate, 120);
 
         setTimeout(function(){
@@ -47,7 +48,8 @@ function scrollUpdate() {
 let flipDegrees = 0;
 function flip(event) {
     const flipElement = event.currentTarget;
-    flipDegrees += 540;
+    flipElement.style.transformStyle = "preserve-3d";                   // add only when animating as makes it slightly blurry
+    flipDegrees += 540;//900;
     flipElement.style.transform = "rotateY(" + flipDegrees + "deg)";
     console.log("flip to " + flipDegrees);
 }
