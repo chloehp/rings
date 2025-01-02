@@ -43,3 +43,11 @@ function scrollUpdate() {
         circle[2].style.opacity = "";
     }
 }
+
+let flipDegrees = 0;
+function flip(event) {
+    const flipElement = event.currentTarget;
+    flipDegrees += 540;
+    flipElement.style.transform = "rotateY(" + flipDegrees + "deg)";
+    console.log("flip to " + flipDegrees);
+}

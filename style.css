@@ -9,7 +9,7 @@ button {
   background: none;
   border: none;
 }
-a {
+a, button {
   text-decoration: none;
   cursor: pointer;
 }
@@ -186,18 +186,27 @@ a:hover {text-decoration: underline;}
 .centre-image {  
   left: 49.8%; top: 23.9%; width: 84%;
   z-index: 30;
-  animation: fade-in 300ms;
+  aspect-ratio: 1/1;
   
   @media (min-width: 720px) {
     left: 49.8%; top: 24.6%; width: 32%;
-    z-index: 30;
-    animation: fade-in 300ms;
   }
 }
 
-#s007-h {
-  font-family: 'YesevaOne', serif;
+.flip {
+  transition: transform 1800ms;  
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  pointer-events: all;
 }
+.flip--back, .flip--front {
+  position: absolute;
+  backface-visibility: hidden;
+  width: 100%;
+  top: 0; left: 0;
+  pointer-events: none;
+}
+.flip--back {transform: rotateY(180deg);}
 
 .pagey {
   position: absolute;
