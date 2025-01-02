@@ -173,8 +173,8 @@ a:hover {text-decoration: underline;}
   border: #385c70 3px solid;
   border-radius: 100%;
 }
-.ringc:hover .ringc--link {opacity: 0.78;}
-.ringc:focus .ringc--link {opacity: 0.78;}
+.ringc:hover .ringc--link {opacity: 0.9;}
+.ringc--link:focus {opacity: 0.9;}
 
 .sub-image {
   position: absolute;
@@ -210,11 +210,41 @@ a:hover {text-decoration: underline;}
     width: 72.96%; height: 81.25%;    
   }
 }
+.flexwrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .content {
+  align-items: baseline;
   position: absolute;
+  padding-right: 12px;
   width: 90%; height: 48%;
   top: 30%; left: 5%;
   border: #3d322396 1.5px solid;
+}
+.content--column {
+  flex: 50%;
+  max-width: 50%;
+  @media (min-width: 720px) {
+    flex: 25%;
+    max-width: 25%; 
+  }
+}
+.content--dblcolumn {
+  flex: 100%;
+  max-width: 100%;
+  @media (min-width: 720px) {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+.content--element {
+  width: 100%;
+  border: #7da49a 6px outset;
+  margin-top: 12px; margin-left: 12px;
+  overflow: hidden;
+  vertical-align: middle;
+  transition: opacity 600ms, scale 600ms ease-out;
 }
 .content--spiral {
   position: absolute;
