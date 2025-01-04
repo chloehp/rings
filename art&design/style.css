@@ -57,6 +57,12 @@
         height: 500px;
     }
 }
+/*
+#tiktok-iframe iframe {
+    opacity: 0;
+    transition: opacity 300ms;
+}
+    */
 #tiktok-iframe p {
     position: absolute;
     left: 0; top: 37.5%;
