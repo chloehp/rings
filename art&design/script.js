@@ -13,11 +13,11 @@ document.onreadystatechange = function () {
     setTimeout(function(){
         //console.log(tiktok.children[1].contentWindow.postMessage.name);
         if (hasTiktokEmbedLoaded !== true) {
-            tiktok.children[0].innerHTML = "Failed to load";
+            tiktok.children[0].innerHTML = "Failed to load.";
             setTimeout(vanishElement, 900, tiktok);
         }
         else {
-            tiktok.children[1].style.opacity = "1";
+            //tiktok.children[1].style.opacity = "1";
             tiktok.children[0].innerHTML = "";
         }
     }, 12000);
