@@ -13,30 +13,36 @@ function appirateElement(el) {
     }, 300);
 }
 
-const haveIloaded = [];
-function loadElement(from, cat, into) {
+//const haveIloaded = [];
+function loadElement(from, cat, into, onlyImg) {
     const fromLen = from.length;
     const columns = into.querySelectorAll(".content--load-here");
     let columnIndex = 0;
     let elementsAppended = 0;
 
-    haveIloaded.push(0);
-    const thisIterationOfHaveIloaded = haveIloaded.length - 1;
+    //haveIloaded.push(0);
+    //const thisIterationOfHaveIloaded = haveIloaded.length - 1;
 
     let i = 0;
     const thisInterval = setInterval(function () {
         if (cat === from[i].cat) {
             const el = document.createElement("a");
             const img = document.createElement("img");
+            const h5 = document.createElement("h5");
+            const p = document.createElement("p");
 
-            el.setAttribute("class", "content--element");                       // set attributes
+            el.setAttribute("class", "content--element  " + from[i].cat);        // set attributes
             el.setAttribute("href", from[i].url);
             el.setAttribute("target", "_blank");
-            img.setAttribute("alt", from[i].alt);
+            img.setAttribute("alt", from[i].title + " thumbnail");
             img.setAttribute("src", from[i].thumb);
+            h5.innerHTML = from[i].title;
+            p.innerHTML = from[i].desc;
 
-            img.setAttribute("onload", "haveIloaded[" + thisIterationOfHaveIloaded + "]++");    // when image loads, add 1 to the item of the array that represents this iteration of the loadElement function
+            //img.setAttribute("onload", "haveIloaded[" + thisIterationOfHaveIloaded + "]++");    // when image loads, add 1 to the item of the array that represents this iteration of the loadElement function
             el.appendChild(img);                                                // append img to element
+            el.appendChild(h5);                                                 // append h5 to element
+            el.appendChild(p);                                                  // append p to element
 
             if (columnIndex >= columns.length) {columnIndex = 0}                // iterate through columns
 
@@ -44,12 +50,12 @@ function loadElement(from, cat, into) {
             appirateElement(el);
             columnIndex++;
             elementsAppended++;
-            console.log(elementsAppended + " load " + from[i].alt + " into " + into.id);
+            console.log(elementsAppended + " load " + from[i].title + " into " + into.id);
         }        
         
         i++; 
         if (i >= fromLen) {clearInterval(thisInterval)}
-    }, 150);
+    }, 180);
 
     
 }

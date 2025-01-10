@@ -22,12 +22,20 @@
 
 .content {background-color: #d0dcc6;}
 .content--element {border: #7da49a 1px solid;}
+.content--element img {width: 100%;}
+.content--element h5, p {display: none;}
+.content--load-here {
+  flex: 50%;
+  max-width: 50%;
+  padding: 0 6px;
+}
 
 #bottom {
     display: block;
     position: absolute;
     left: -1%; bottom: 0;
     width: 102%;
+    z-index: 30;
     @media (min-width: 720px) {   
         left: 13.48%; bottom: 3%;
         width: 73.2%;
@@ -65,13 +73,11 @@
 }
     */
 #tiktok-iframe p {
+    display: block;
     position: absolute;
     left: 0; top: 37.5%;
     width: 100%;
     color: #3d3223;
-    font-family: 'GrandifloraOne', serif;  
-    font-size: 24px;
-    font-weight: bold;
     text-align: center;
     animation: pulse 1200ms ease-in-out alternate 1200ms infinite;
 }
