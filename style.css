@@ -30,7 +30,7 @@
 
 .base {
   @media (min-width: 720px) {
-    background-image: url(assets/mid_1080p/base.jpg);
+    background-image: url(assets/mid_1080p/base.webp);
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 15%;
